@@ -137,3 +137,10 @@ movies.remove(at:0)
 movies.count
 let favMovies = ["End Game","Toy Story", "DBS"]
 
+print(favMovies[0])
+
+// Loops
+// Allows you to repeat an item multiple times
+for _ in 1...10 {
+    print("Hello!")
+}
