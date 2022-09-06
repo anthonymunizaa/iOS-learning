@@ -29,6 +29,7 @@
 		7B68F21428B5B15C001CF482 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		7B68F21628B5B364001CF482 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		7B68F21828B6C00D001CF482 /* Dallas, Texas.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Dallas, Texas.gpx"; sourceTree = "<group>"; };
+		7B68F21928B7C1F1001CF482 /* Fort Worth, Texas.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Fort Worth, Texas.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				7B68F21828B6C00D001CF482 /* Dallas, Texas.gpx */,
+				7B68F21928B7C1F1001CF482 /* Fort Worth, Texas.gpx */,
 				7B68F1FB28B5A971001CF482 /* Weather */,
 				7B68F1FA28B5A971001CF482 /* Products */,
 			);
