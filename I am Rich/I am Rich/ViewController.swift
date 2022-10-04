@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        colorWell.frame = CGRect(x: 195, y: 425, width: view.frame.size.width-10, height: 50)
+        colorWell.frame = CGRect(x:8, y: 425, width: view.frame.size.width-10, height: 50)
     }
     
     @IBAction func didTapButton(){

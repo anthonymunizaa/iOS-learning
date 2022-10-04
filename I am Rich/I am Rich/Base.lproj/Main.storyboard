@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i0W-Ui-fYP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i0W-Ui-fYP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,7 +16,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="41L-zf-375">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6Gj-ov-Gc2"/>
@@ -83,7 +84,7 @@
             </objects>
             <point key="canvasLocation" x="1924.6376811594205" y="113.83928571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_am_Rich" customModuleProvider="target" sceneMemberID="viewController">
@@ -162,7 +163,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.14117647058823529" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" selectedImage="rectangle.and.pencil.and.ellipsis" id="ceM-wZ-gh3"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" selectedImage="rectangle.and.pencil.and.ellipsis" id="ceM-wZ-gh3"/>
                     <connections>
                         <outlet property="lastTextField" destination="BAL-eA-eE9" id="L0Z-Mo-rRv"/>
                         <outlet property="titleTextField" destination="il1-P6-lR6" id="sgI-TE-3om"/>
@@ -172,7 +173,7 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
-        <!--Color-->
+        <!--Dice-->
         <scene sceneID="LSL-fD-Nd2">
             <objects>
                 <viewController storyboardIdentifier="secVC" id="6kZ-Ph-Wa2" customClass="SecondViewController" customModule="I_am_Rich" customModuleProvider="target" sceneMemberID="viewController">
@@ -181,7 +182,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Co7-Bg-osc">
-                                <rect key="frame" x="87" y="255" width="240" height="346"/>
+                                <rect key="frame" x="87" y="453" width="240" height="346"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -203,14 +204,37 @@
                                 <rect key="frame" x="87" y="119" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="VkY-m0-dra">
+                                <rect key="frame" x="-19" y="294" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="qTR-Cb-eLx">
+                                <rect key="frame" x="191" y="294" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjq-k4-C4E">
+                                <rect key="frame" x="149" y="255" width="116" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60609471800000003" green="0.110549219" blue="0.1215417162" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Press Me">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="diceButton:" destination="6kZ-Ph-Wa2" eventType="touchUpInside" id="fQx-to-rNY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jrz-yh-gdv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemRedColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Color" image="highlighter" catalog="system" selectedImage="highlighter" id="gfB-9z-5ka"/>
+                    <tabBarItem key="tabBarItem" title="Dice" image="highlighter" catalog="system" selectedImage="highlighter" id="gfB-9z-5ka"/>
                     <navigationItem key="navigationItem" id="CbN-rG-9Yj"/>
                     <connections>
+                        <outlet property="diceImageOne" destination="VkY-m0-dra" id="fi7-mC-eIz"/>
+                        <outlet property="diceImageTwo" destination="qTR-Cb-eLx" id="Kxr-td-gz7"/>
                         <outlet property="textview" destination="Co7-Bg-osc" id="PdV-V0-wsx"/>
                     </connections>
                 </viewController>
@@ -221,6 +245,7 @@
     </scenes>
     <resources>
         <image name="diamond" width="257.5" height="188.5"/>
+        <image name="dice1" width="100" height="100"/>
         <image name="highlighter" catalog="system" width="128" height="119"/>
         <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
